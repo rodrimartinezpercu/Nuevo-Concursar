@@ -1,0 +1,27 @@
+
+
+.nav__logo{
+    width: 100px;
+}
+.nav__master{
+    background-color: #1B1464;
+color: white !important;}
+
+body { background-color: antiquewhite;}
+
+.main__hero {
+    border: solid; border-color: #1B1464;
+}
+
+.main__hero--logo{background-image: url(/Assets/Imagenes/Partituras.jpg); background-color:rgba(0, 0, 0, 50) ;}
+
+.main__cards{ 
+    background-color: #1B1464; padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.card-img-top { padding: 3px;}
+
+.main__img--hero{opacity: 100%;}
+
+
