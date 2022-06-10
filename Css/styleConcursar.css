@@ -14,11 +14,11 @@ body { background-color: antiquewhite;}
 
 .main__hero {
     border: solid; border-color: #1B1464;
-;}
+;width: 100%; margin:0%}
 
 .main__hero--logo{background-image: url(/Assets/Imagenes/Partituras.jpg); padding: -12px;}
 
-.main__hero--carrousel{padding-left: -12px;padding-right: -12px;}
+.main__hero--carrousel{padding: 0%;}
 
 .cardBanda{grid-area: "banda";}
 .cardOrquesta {grid-area: "orquesta";}
