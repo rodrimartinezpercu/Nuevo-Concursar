@@ -6,8 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Assets/Imagenes/NUEVO-FAVICON.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;700&family=Space+Mono:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./Css/styleConcursar.css">
-    <title>Document</title>
+    <title>ConcursAr Web</title>
 </head>
 <body>
     <header>
@@ -17,23 +21,23 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav ">
                     <li class="nav-item">
-                    <a class="nav-link active text-white" aria-current="page" href="#">Registro</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link active text-white" aria-current="page" href="#">Archivo</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link active text-white" aria-current="page" href="#">Contacto</a>
-                    </li>
+                        <a class="nav-link active text-white" aria-current="page" href="./Registro.html">Registro</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="./archivo.html">Archivo</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="./Contacto.html">Contacto</a>
+                        </li>
 
                 </ul>
-                    <div>
-                        <a class="nav-link active text-white" aria-current="page" href="#">Iniciar Sesion</a>
-                    </div>
-                    
+                
+            </div>
+            <div>
+                <a class="nav-link active text-white" aria-current="page" href="#">Iniciar Sesion</a>
             </div>
         </div>
         </nav>
@@ -62,32 +66,40 @@
                 </div>
             </section>
         </div>
-        <section class="d-grid main__cards align-items-center">
-            <div class="main__cards--tipos d-grid justify-content-around ">
-                <div class="card cardBanda " style="width: 18rem;">
-                    
-                    <div class=" card-body d-flex flex-column justify-content-between align-items-center ">
-                        <img src="./Assets/Imagenes/banda.png" class="card-img-top m-1 w-100" alt="...">
-                        <h4>Bolsa de Trabajo</h4>
-                        <p class="card-text">Compendio de convocatiorias para freelance, grabacion y participacion en producciones privadas o publicas.</p>
-                    </div>
-                    </div>
-                    <div class="card cardOrquesta " style="width: 18rem;">
-                        <div class="  card-body d-flex flex-column justify-content-between align-items-center">
-                            <img src="./Assets/Imagenes/Brass.png" class="card-img-top m-1 w-100 " alt="...">
-                            <h4>Orquesta y Banda</h4>
-                            <p class="card-text">Convocatorias activas y futuras para organizmos sinfonicos, de camara, a lo largo del pais.</p>
-                    </div>
-                </div>
-                <div class="card cardEducacion" style="width: 18rem;">
-                    <div class="card-body d-flex flex-column justify-content-between align-items-center">
-                        <img src="./Assets/Imagenes/Educacion.png">
-                        <h4>Educacion</h4>
-                        <p class="card-text">Convocatorias para puestos como formadores/as tanto en el ambito de educacion publica, como privada o particular.</p>
-                    </div>
+
+        <div class="main__cards row row-cols-1 row-cols-md-3 g-4 w-100 m-0">
+            <div class="col">
+                <div class="card h-100">
+                <img src="./Assets/Imagenes/banda.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Bolsa de trabajo</h5>
+                    <p class="card-text">Crea tu perfil y contactate con oportunidades freelance, diversos proyectos o de sesionista.</p>
                 </div>
             </div>
-        </section>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                <img src="./Assets/Imagenes/Brass.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Orquesta</h5>
+                    <p class="card-text">Programá notificaciones para enterarte de convocatorias activas o futuras a lo largo del pais y Latinoamerica, en organismos sifonicos o de camara. </p>
+                </div>
+                
+            </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                <img src="./Assets/Imagenes/Educacion.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Educacion</h5>
+                    <p class="card-text">Enlace con instituciones privadas o publicas en busca de formadores/ar tanto en el ambito de la educacion publica, privada y particular.</p>
+                </div>
+                
+            </div>
+            </div>
+        </div>
+
+
         <section class="main__wave--contenedor d-flex">
 
             <div class="main__wave w-50 ">
@@ -106,19 +118,27 @@
         
 
         <section>
-            <div class="main__mock">
-                <a href="#"><h1 class="main__mock--cta d-flex justify-content-center w-auto">
-                    PROYECTO MOCK
-                </h1></a>
+            <div class="d-flex flex-column main__mock justify-content-center align-items-center text-center">
+                <div>
+                    <a href="./ProyectoMock.html"><h1 class="main__mock--cta d-flex justify-content-center w-auto">
+                        Proyecto Mock
+                    </h1></a>
+                </div>
+                <div class="text-center">
+                    <p class="fst-italic text-wrap ">
+                        "Sumate a una comunidad en la que vamos a ser alumnxs, profesorxs y colegas, a la vez"
+                    </p>
+                </div>
             </div>
         </section>
+
     </main>
 
     <footer>
         <div class="footer__info d-grid">
-            <a href="https://www.mercadopago.com.ar/"><i class="fa-solid fa-circle-dollar-to-slot"></i> </a>
-            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.mercadopago.com.ar/" target="_blank"><i class="fa-solid fa-circle-dollar-to-slot"></i> </a>
+            <a href="https://www.instagram.com/" target="_blank" ><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
 
         </div>
     </footer>

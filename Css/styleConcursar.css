@@ -13,12 +13,12 @@ color: white !important;}
 body { background-color: antiquewhite;}
 
 .main__hero {
-    border: solid; border-color: #1B1464;
+    border: solid; border-color: antiquewhite;
 ;width: 100%; margin:0%}
 
 .main__hero--logo{background-image: url(/Assets/Imagenes/Partituras.jpg); padding: -12px;}
 
-.main__hero--carrousel{padding: 0%;}
+.main__hero--carrousel{padding: 0%;border-left: solid; border-color: antiquewhite;}
 
 .cardBanda{grid-area: "banda";}
 .cardOrquesta {grid-area: "orquesta";}
@@ -26,12 +26,13 @@ body { background-color: antiquewhite;}
 
 .main__cards{ 
     background-color: #1B1464; padding-top: 3rem;
-    padding: 2rem;
+    padding: 2rem
+    ;
 }
 
 .card {width: 100%; }
 
-.main__cards--tipos{grid-template-columns: repeat(3, 1fr); align-self: center;place-items: center}
+.card-body {text-align: center;}
 
 .card-img-top { padding: 3px;}
 
@@ -39,9 +40,9 @@ body { background-color: antiquewhite;}
 
 .main__wave{height: 30vh;}
 
-.main__mock--cta{ color: black; border: solid 3px; border-color:rgb(161, 24, 24) ; background-image: url(/Assets/Imagenes/Partituras.jpg); padding: 2rem 3rem;}
-
-.main__mock{ padding: 2rem 3rem 5rem 3rem;}
+.main__mock--cta{ color: white; border: solid 3px; border-color:rgb(161, 24, 24) ; background-image: url(/Assets/Imagenes/Mock.png); padding: 2rem 3rem; font-family: 'Space Mono', monospace ;
+font-weight:700; background-size: 100%; background-repeat: no-repeat; background-position: center; }
+.main__mock{ padding: 2rem 3rem 5rem 3rem; flex-wrap: wrap;}
 
 .footer__info{ grid-template-columns: repeat(3, 1fr); background-color: #0f0a46;
 color: white; place-items:center;}
@@ -50,11 +51,10 @@ footer a {text-decoration: none; color: white;}
 
 /**Medias**/
 
-@media screen and(max-width: 880px) {
+@media screen and(max-width: 375px) {
 
-    .main__cards--tipos{grid-template-columns: 1fr;
-    grid-template-areas: "banda"
-    "orquesta"
-    "educacion";}
+    .main__mock{padding: 1rem}
 
+
+    
 }
