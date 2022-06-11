@@ -3,6 +3,8 @@ footer{background-color: #0f0a46; color: white; padding: 1rem;}
 
 a{ text-decoration: none;}
 
+h2{ font-weight: 400;}
+
 .nav__logo{
     width: 100px;
 }
@@ -49,6 +51,20 @@ color: white; place-items:center;}
 
 footer a {text-decoration: none; color: white;}
 
+
+
+/** Registro**/ 
+
+.main__registro{ grid-template-columns: 0.5fr; justify-content: center
+    ; }
+
+.main__datos--margen {padding: 5px;}
+
+.datosPers{font-weight: 400;}
+
+.btn__registro{ background-color: #1B1464;color: antiquewhite;}
+
+.btn-primary{background-color: #1B1464 !important;color: antiquewhite; }
 /**Medias**/
 
 @media screen and(max-width: 375px) {
@@ -57,4 +73,10 @@ footer a {text-decoration: none; color: white;}
 
 
     
+}
+
+@media screen and (max-width: 768px) {
+    
+    .main__registro{ grid-template-columns: 0.8fr; justify-content: center
+        ; }
 }
