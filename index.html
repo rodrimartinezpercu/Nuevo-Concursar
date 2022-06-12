@@ -17,7 +17,7 @@
     <header>
         <nav class="navbar navbar-expand-lg  nav__master bg-#1B1464 ">
         <div class="container-fluid ">
-            <a class="nav__logo" href="#"><img class="nav__logo" src="./Assets/Imagenes/NUEVO-LOGO-INVERSO.png" alt=""></a>
+            <a class="nav__logo" href="#"><img class="nav__logo " src="./Assets/Imagenes/NUEVO-LOGO-INVERSO.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -47,15 +47,15 @@
 
             <section class="main__hero row ">
                 <div class="main__hero--logo col-6 d-grid align-items-center justify-content-center ">
-                    <img class=" main__img--hero w-100" src="/Assets/Imagenes/NUEVO-CONCURSAR.png" alt="">
+                    <img class=" main__img--hero w-100 swing-in-top-fwd " src="/Assets/Imagenes/NUEVO-CONCURSAR.png" alt="">
                     </div>
                 <div class="main__hero--carrousel col-6">
                     <div id="carouselExampleSlidesOnly" class="carousel slide w-100 col-6 p-0" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" >
+                    <div class="carousel-inner" data-bs-interval="1000">
+                        <div class="carousel-item active " data-bs-interval="4000" >
                             <img src="./Assets/Imagenes/timbales.jpg" class="d-block w-100" alt="...">
                         </div>
-                        <div class="carousel-item" >
+                        <div class="carousel-item" data-bs-interval="4000" >
                             <img src="./Assets/Imagenes/Picollo.jpg" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item" >
@@ -68,32 +68,45 @@
         </div>
 
         <div class="main__cards row row-cols-1 row-cols-md-3 g-4 w-100 m-0">
-            <div class="col">
-                <div class="card h-100">
-                <img src="./Assets/Imagenes/banda.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Bolsa de trabajo</h5>
-                    <p class="card-text">Crea tu perfil y contactate con oportunidades freelance, diversos proyectos o de sesionista.</p>
-                </div>
-            </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                <img src="./Assets/Imagenes/Brass.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Orquesta</h5>
-                    <p class="card-text">Programá notificaciones para enterarte de convocatorias activas o futuras a lo largo del pais y Latinoamerica, en organismos sifonicos o de camara. </p>
-                </div>
+            
                 
-            </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                <img src="./Assets/Imagenes/Educacion.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Educacion</h5>
-                    <p class="card-text">Enlace con instituciones privadas o publicas en busca de formadores/ar tanto en el ambito de la educacion publica, privada y particular.</p>
+                    <div class="col ">
+                        <div class="card h-100 main__card--hov">
+                        <a href="./BolsaDeTrabajo.html">
+                            <img src="./Assets/Imagenes/banda.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Bolsa de trabajo</h5>
+                                <p class="card-text">Crea tu perfil y contactate con oportunidades freelance, diversos proyectos o de sesionista.</p>
+                            </div>
+                        </a>
+                        </div>
+                    </div>
+                    
+            
+            
+                
+                    <div class="col ">
+                        <div class="card h-100 main__card--hov">
+                        <a href="./orq.html">
+                            <img src="./Assets/Imagenes/Brass.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="./"></a>
+                                <h5 class="card-title">Orquesta</h5>
+                                <p class="card-text">Programá notificaciones para enterarte de convocatorias activas o futuras a lo largo del pais y Latinoamerica, en organismos sifonicos o de camara. </p>
+                            </div>
+                        </a>
+                        
+                    </div>
                 </div>
+            <div class="col ">
+                <div class="card h-100 main__card--hov ">
+                    <a href="./edu.html">
+                        <img src="./Assets/Imagenes/Educacion.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Educacion</h5>
+                            <p class="card-text">Enlace con instituciones privadas o publicas en busca de formadores/ar tanto en el ambito de la educacion publica, privada y particular.</p>
+                        </div>
+                    </a>
                 
             </div>
             </div>
