@@ -18,7 +18,7 @@ body { background-color: antiquewhite;}
     border: solid; border-color: antiquewhite;
 ;width: 100%; margin:0%}
 
-.main__hero--logo{background-image: url(/Assets/Imagenes/Partituras.jpg); padding: -12px; }
+.main__hero--logo{background-image: url(../Assets/Imagenes/Partituras.jpg); padding: -12px; }
 
 .main__hero--carrousel{padding: 0%;border-left: solid; border-color: antiquewhite;}
 
@@ -52,7 +52,7 @@ animation-iteration-count: 0.3s;}
 
 .main__wave{height: 30vh;}
 
-.main__mock--cta{ color: white; border: solid 3px; border-color:rgb(14, 12, 12) ; background-image: url(/Assets/Imagenes/mock.png); padding: 1rem 3rem 3rem 3rem; font-family: Arial, Helvetica, sans-serif, monospace ;
+.main__mock--cta{ color: white; border: solid 3px; border-color:rgb(14, 12, 12) ; background-image: url(../Assets/Imagenes/mock.png); padding: 1rem 3rem 3rem 3rem; font-family: Arial, Helvetica, sans-serif, monospace ;
 font-weight: 200; background-size: 100%; background-repeat: repeat; background-position: center;  transition: 50ms}
 
 .main__mock--cta:hover{
