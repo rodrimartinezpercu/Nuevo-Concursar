@@ -1,1 +1,10 @@
-@import "parciales/reset"
+@import "./parciales/variables" ;
+@import "./parciales/reset";
+@import "./parciales/generales";
+@import "./parciales/navbar";
+@import "./parciales/mainHero";
+@import "./parciales/mainCards";
+@import "./parciales/mock";
+@import "./parciales/footer";
+
+

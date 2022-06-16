@@ -1,0 +1,11 @@
+@media screen and(max-width: 375px) {
+
+    .main__mock{padding: 1rem}
+
+}
+
+@media screen and (max-width: 768px) {
+    
+    .main__registro{ grid-template-columns: 0.8fr; justify-content: center
+        ; }
+}

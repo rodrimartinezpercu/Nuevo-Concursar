@@ -1,0 +1,5 @@
+.footer{
+    &__info{ grid-template-columns: repeat(3, 1fr); background-color: #0f0a46;
+        color: white; place-items:center;}
+
+}
