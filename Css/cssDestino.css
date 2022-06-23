@@ -91,7 +91,8 @@ h2 {
   width: 100%; }
 
 .main__card--body {
-  text-align: center; }
+  text-align: center;
+  color: black !important; }
 
 .main__card--img {
   padding: 3px; }
@@ -99,9 +100,6 @@ h2 {
 .main__card--hov:hover {
   transform: scale(105%);
   z-index: 1; }
-
-.main .colorCard {
-  color: black; }
 
 .main__mock {
   padding: 2rem 3rem 5rem 3rem;
@@ -124,8 +122,62 @@ h2 {
   transform: scale(110%);
   z-index: 1; }
 
+.main__mock--subText {
+  color: #1B1464; }
+
 .footer__info {
   grid-template-columns: repeat(3, 1fr);
   background-color: #0f0a46;
   color: white;
   place-items: center; }
+
+/*orquesta*/
+.main__orq, .main {
+  padding: 2rem 0rem 4rem 0rem; }
+
+.main__btn {
+  color: antiquewhite; }
+
+.main__btn--cuerdas {
+  background-image: url(/Assets/Imagenes/Cuerdas.jpg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 15vh;
+  width: 100%;
+  border: solid;
+  border-color: #1B1464;
+  padding: 1rem; }
+
+.main__btn--maderas {
+  background-image: url(/Assets/Imagenes/Madera.jpeg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 15vh;
+  width: 100%;
+  border: solid;
+  border-color: #1B1464;
+  padding: 1rem; }
+
+.main__btn--bronces {
+  background-image: url(/Assets/Imagenes/Bronces.jpg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 15vh;
+  width: 100%;
+  border: solid;
+  border-color: #1B1464;
+  padding: 1rem; }
+
+.main__btn--percu {
+  background-image: url(/Assets/Imagenes/Percu.jpg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 15vh;
+  width: 100%;
+  border: solid;
+  border-color: #1B1464;
+  padding: 1rem; }

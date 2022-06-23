@@ -2,9 +2,10 @@
     &__cards{background-color: $fondoAzul;
     padding-top: 3rem;
 padding: 2rem;}
-    &__card{ width: 100%;
-    }
-    &__card--body{ text-align: center;}
+
+    &__card{ width: 100%;}
+
+    &__card--body{ text-align: center; color: map-get($colorTxt,"txtBlack") !important;}
 
     &__card--img{padding: 3px;}
 
@@ -12,5 +13,5 @@ padding: 2rem;}
         transform: scale( 105% ); z-index: 1; 
     
     }
-.colorCard {color:black}
+
 }

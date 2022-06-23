@@ -1,4 +1,6 @@
 @import "./parciales/variables" ;
+@import "./parciales/maps";
+@import "./parciales/mixing";
 @import "./parciales/reset";
 @import "./parciales/generales";
 @import "./parciales/navbar";
@@ -6,5 +8,14 @@
 @import "./parciales/mainCards";
 @import "./parciales/mock";
 @import "./parciales/footer";
+
+/*orquesta*/
+
+@import "./parciales/orquesta";
+
+//* Bolsa de Trabajo*//
+
+@import "./parciales/bolsatdetrabajo" ;
+
 
 

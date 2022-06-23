@@ -1,0 +1,29 @@
+.main{
+    &__orq{ padding: 2rem 0rem 4rem 0rem;}
+
+    &__btn{ color: map-get($colorTxt,"txtClaro");} 
+        
+
+        &__btn--cuerdas {
+            background-image:url(/Assets/Imagenes/Cuerdas.jpg);
+            @include backImg;
+            @include btnConvocatorias
+    
+        }
+        &__btn--maderas{
+            background-image: url(/Assets/Imagenes/Madera.jpeg);
+            @include backImg;
+            @include btnConvocatorias
+        }
+        &__btn--bronces{
+            background-image: url(/Assets/Imagenes/Bronces.jpg);
+            @include backImg;
+            @include btnConvocatorias
+        }
+        &__btn--percu{
+            background-image: url(/Assets/Imagenes/Percu.jpg);
+            @include backImg;
+            @include btnConvocatorias
+        }
+    
+} 

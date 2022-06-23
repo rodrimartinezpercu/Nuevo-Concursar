@@ -6,4 +6,8 @@
 
     &__mock--cta:hover{
         transform: scale( 110% ); z-index: 1; }
+
+    &__mock--subText{
+        color: map-get($colorTxt ,"txtOscuro");
+    }
     }
