@@ -1,37 +1,28 @@
 .main{
-    &__orq{ 
-        padding: 2rem 0rem 4rem 0rem;
-        @include efEntrada}
+    &__edu{
+        @extend .main__orq;
+        @include efEntrada
+    }
 
-    &__btn{ 
-        color: map-get($colorTxt,"txtClaro");
+    &__edu--btn {
+        color: $fondoClaro;
         @include txtShadow;
-    } 
         
 
-        &__btn--cuerdas {
-            background-image:url(/Assets/Imagenes/Cuerdas.jpg);
-            @include backImg;
-            @include btnConvocatorias
+    }
+
+    &__btn--escolar {
+        background-image:url(/Assets/Imagenes/EduExtra.jpg) ;
+        @include btnConvocatorias;
+        @include backImg;
+    }
+    &__btn--extraescolar { 
+        background-image: url(/Assets/Imagenes/EduParticular.jpg);
+        @include btnConvocatorias;
+        @include backImg
+    }
     
-        }
-        &__btn--maderas{
-            background-image: url(/Assets/Imagenes/Madera.jpeg);
-            @include backImg;
-            @include btnConvocatorias
-        }
-        &__btn--bronces{
-            background-image: url(/Assets/Imagenes/Bronces.jpg);
-            @include backImg;
-            @include btnConvocatorias
-        }
-        &__btn--percu{
-            background-image: url(/Assets/Imagenes/Percu.jpg);
-            @include backImg;
-            @include btnConvocatorias
-        }
-    
-} 
+}
 
 .slide-in-fwd-center {
     -webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -61,3 +52,4 @@
                 }
 
             }
+

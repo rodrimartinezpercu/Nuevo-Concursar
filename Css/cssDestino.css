@@ -1,3 +1,5 @@
+/*mixings para botones de Convocatorias*/
+/* mixing efecto de Entrada de pags, Exepto index*/
 * {
   margin: 0;
   padding: 0;
@@ -110,11 +112,11 @@ h2 {
   border: solid 3px;
   border-color: #0e0c0c;
   background-image: url(../Assets/Imagenes/Mock.png);
-  padding: 1rem 3rem 3rem 3rem;
+  padding: 1rem 3rem 1rem 3rem;
   font-family: Arial, Helvetica, sans-serif, monospace;
   font-weight: 200;
   background-size: 100%;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-position: center;
   transition: 50ms; }
 
@@ -125,18 +127,87 @@ h2 {
 .main__mock--subText {
   color: #1B1464; }
 
+@media screen and (min-width: 420px) {
+  .main__mock--cta {
+    padding: 1rem 3rem 3rem 3rem; } }
+
+/**El footer idealmente seria este de abajo, pero creo
+una clase especifica para las paginas donde hay menos contenido 
+y quiero en futer fijado abajo*/
 .footer__info {
   grid-template-columns: repeat(3, 1fr);
   background-color: #0f0a46;
   color: white;
   place-items: center; }
 
-/*orquesta*/
-.main__orq, .main {
-  padding: 2rem 0rem 4rem 0rem; }
+.footerFixed {
+  bottom: 0px;
+  position: absolute;
+  width: 100%; }
+
+/*Registro*/
+.main__registro {
+  grid-template-columns: 0.5fr;
+  justify-content: center;
+  animation-name: slide-in-fwd-center;
+  animation-duration: 1s;
+  animation-iteration-count: 1; }
+
+.main__datos--margen {
+  padding: 5px; }
+
+.datosPers {
+  font-weight: 400; }
+
+.btn__registro {
+  background-color: #1B1464;
+  color: antiquewhite; }
+
+.btn-primary {
+  background-color: #1B1464 !important;
+  color: antiquewhite; }
+
+.slide-in-fwd-center {
+  -webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-fwd-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+@-webkit-keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+    transform: translateZ(-1400px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1; } }
+
+@keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+    transform: translateZ(-1400px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1; } }
+
+@media screen and (max-width: 768px) {
+  .main__registro {
+    grid-template-columns: 0.8fr;
+    justify-content: center; } }
+
+/*Convocatorias-
+division en 3 paginas con similares funciones
+"ORQUESTA", "BOLSA DE TRABAJO", "EDUCACION". */
+.main__orq, .main__BdT, .main__edu {
+  padding: 2rem 0rem 4rem 0rem;
+  animation-name: slide-in-fwd-center;
+  animation-duration: 1s;
+  animation-iteration-count: 1; }
 
 .main__btn {
-  color: antiquewhite; }
+  color: antiquewhite;
+  text-shadow: 1px 0 0 black, -1px 0 0 black, 0 1px 0 black, 0 -1px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black; }
 
 .main__btn--cuerdas {
   background-image: url(/Assets/Imagenes/Cuerdas.jpg);
@@ -181,3 +252,148 @@ h2 {
   border: solid;
   border-color: #1B1464;
   padding: 1rem; }
+
+.slide-in-fwd-center {
+  -webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-fwd-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+@-webkit-keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+    transform: translateZ(-1400px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1; } }
+
+@keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+    transform: translateZ(-1400px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1; } }
+
+.main__BdT {
+  animation-name: slide-in-fwd-center;
+  animation-duration: 1s;
+  animation-iteration-count: 1; }
+
+.main__btn__BdT {
+  color: antiquewhite;
+  text-shadow: 1px 0 0 black, -1px 0 0 black, 0 1px 0 black, 0 -1px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black; }
+
+.main__btn--banda {
+  background-image: url(/Assets/Imagenes/BandaYSolo.jpg);
+  height: 15vh;
+  width: 100%;
+  border: solid;
+  border-color: #1B1464;
+  padding: 1rem;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat; }
+
+.main__btn--sesionista {
+  background-image: url(/Assets/Imagenes/Grabacion.jpg);
+  height: 15vh;
+  width: 100%;
+  border: solid;
+  border-color: #1B1464;
+  padding: 1rem;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat; }
+
+.main__btn--composicion {
+  background-image: url(/Assets/Imagenes/ArreglosCompo.jpg);
+  height: 15vh;
+  width: 100%;
+  border: solid;
+  border-color: #1B1464;
+  padding: 1rem;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat; }
+
+.slide-in-fwd-center {
+  -webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-fwd-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+@-webkit-keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+    transform: translateZ(-1400px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1; } }
+
+@keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+    transform: translateZ(-1400px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1; } }
+
+.main__edu {
+  animation-name: slide-in-fwd-center;
+  animation-duration: 1s;
+  animation-iteration-count: 1; }
+
+.main__edu--btn {
+  color: antiquewhite;
+  text-shadow: 1px 0 0 black, -1px 0 0 black, 0 1px 0 black, 0 -1px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black; }
+
+.main__btn--escolar {
+  background-image: url(/Assets/Imagenes/EduExtra.jpg);
+  height: 15vh;
+  width: 100%;
+  border: solid;
+  border-color: #1B1464;
+  padding: 1rem;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat; }
+
+.main__btn--extraescolar {
+  background-image: url(/Assets/Imagenes/EduParticular.jpg);
+  height: 15vh;
+  width: 100%;
+  border: solid;
+  border-color: #1B1464;
+  padding: 1rem;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat; }
+
+.slide-in-fwd-center {
+  -webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-fwd-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+@-webkit-keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+    transform: translateZ(-1400px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1; } }
+
+@keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+    transform: translateZ(-1400px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1; } }

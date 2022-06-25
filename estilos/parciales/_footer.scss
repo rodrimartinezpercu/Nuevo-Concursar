@@ -1,5 +1,14 @@
-.footer{
-    &__info{ grid-template-columns: repeat(3, 1fr); background-color: #0f0a46;
+/**El footer idealmente seria este de abajo, pero creo
+una clase especifica para las paginas donde hay menos contenido 
+y quiero en futer fijado abajo*/
+.footer{ 
+        &__info{ grid-template-columns: repeat(3, 1fr); background-color: #0f0a46;
         color: white; place-items:center;}
 
+}
+
+.footerFixed {
+    bottom: 0px;
+    position: absolute;
+    width: 100%;
 }

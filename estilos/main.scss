@@ -9,13 +9,20 @@
 @import "./parciales/mock";
 @import "./parciales/footer";
 
-/*orquesta*/
+/*Registro*/
+
+@import "./parciales/registro";
+
+/*Convocatorias-
+division en 3 paginas con similares funciones
+"ORQUESTA", "BOLSA DE TRABAJO", "EDUCACION". */
 
 @import "./parciales/orquesta";
-
-//* Bolsa de Trabajo*//
-
 @import "./parciales/bolsatdetrabajo" ;
+@import "./parciales/edu";
+
+
+
 
 
 

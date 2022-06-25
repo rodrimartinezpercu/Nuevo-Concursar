@@ -1,3 +1,60 @@
 .main{
-    @extend .main__orq
+
+    &__BdT{
+        @extend .main__orq;
+        @include efEntrada
+        
+    }
+
+    &__btn__BdT{ 
+        color: $fondoClaro; 
+        @include txtShadow}
+
+    &__btn--banda{
+        background-image: url(/Assets/Imagenes/BandaYSolo.jpg);
+        @include btnConvocatorias;
+        @include backImg
+    }
+    &__btn--sesionista {
+        background-image: url(/Assets/Imagenes/Grabacion.jpg);
+        @include btnConvocatorias;
+        @include backImg
+    }
+
+    &__btn--composicion {
+        background-image: url(/Assets/Imagenes/ArreglosCompo.jpg);
+        @include btnConvocatorias;
+        @include backImg
+    }
+    
 }
+
+.slide-in-fwd-center {
+    -webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;}
+
+            @-webkit-keyframes slide-in-fwd-center {
+                0% {
+                    -webkit-transform: translateZ(-1400px);
+                    transform: translateZ(-1400px);
+                opacity: 0;}
+                100% {
+                    -webkit-transform: translateZ(0);
+                    transform: translateZ(0);
+                    opacity: 1;
+                    }
+                }
+            @keyframes slide-in-fwd-center {
+                0% {
+                -webkit-transform: translateZ(-1400px);
+                transform: translateZ(-1400px);
+                opacity: 0;
+                }
+                100% {
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0);
+                opacity: 1;
+                }
+
+            }
+
