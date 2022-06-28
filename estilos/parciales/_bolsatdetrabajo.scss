@@ -8,7 +8,9 @@
 
     &__btn__BdT{ 
         color: $fondoClaro; 
-        @include txtShadow}
+        @include txtShadow;
+        }
+        &__btn__BdT a {color: $fondoClaro;}
 
     &__btn--banda{
         background-image: url(/Assets/Imagenes/BandaYSolo.jpg);

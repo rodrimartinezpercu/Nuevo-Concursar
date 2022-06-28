@@ -25,3 +25,7 @@
     animation-name:slide-in-fwd-center;animation-duration: 1s;
     animation-iteration-count: 1;
 }
+
+@mixin ancorNatural {
+    text-decoration: none;
+}

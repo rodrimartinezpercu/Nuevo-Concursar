@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*mixings para botones de Convocatorias*/
 /* mixing efecto de Entrada de pags, Exepto index*/
 * {
@@ -127,6 +128,31 @@ h2 {
 .main__mock--subText {
   color: #1B1464; }
 
+/*sitio mock*/
+.body__mock {
+  background-color: #EEEEEE; }
+
+.hero {
+  grid-template-rows: 1fr 1fr;
+  height: 60vh; }
+  .hero__mock {
+    background-color: #EEEEEE;
+    height: 100%;
+    width: 100%; }
+  .hero__mock--txt {
+    font-style: italic;
+    display: grid;
+    place-content: center;
+    font-size: 25px;
+    font-weight: 700; }
+  .hero__mock--video {
+    height: 50%; }
+
+.mockLegend {
+  height: 60vh;
+  place-content: center;
+  color: #EEEEEE; }
+
 @media screen and (min-width: 420px) {
   .main__mock--cta {
     padding: 1rem 3rem 3rem 3rem; } }
@@ -198,7 +224,10 @@ y quiero en futer fijado abajo*/
 
 /*Convocatorias-
 division en 3 paginas con similares funciones
-"ORQUESTA", "BOLSA DE TRABAJO", "EDUCACION". */
+"ORQUESTA", "BOLSA DE TRABAJO", "EDUCACION".
+a su vez estas tienen las ecciones de cada instrumento pero al ser todas 
+las paginas similares con pequeños cambios, para no alargar,
+tengo uns sola pestaña donde modifico los cambios de todas estas subsecciones */
 .main__orq, .main__BdT, .main__edu {
   padding: 2rem 0rem 4rem 0rem;
   animation-name: slide-in-fwd-center;
@@ -207,7 +236,11 @@ division en 3 paginas con similares funciones
 
 .main__btn {
   color: antiquewhite;
-  text-shadow: 1px 0 0 black, -1px 0 0 black, 0 1px 0 black, 0 -1px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black; }
+  text-shadow: 1px 0 0 black, -1px 0 0 black, 0 1px 0 black, 0 -1px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+  text-decoration: none; }
+
+.main__btn a {
+  color: antiquewhite; }
 
 .main__btn--cuerdas {
   background-image: url(/Assets/Imagenes/Cuerdas.jpg);
@@ -286,6 +319,9 @@ division en 3 paginas con similares funciones
   color: antiquewhite;
   text-shadow: 1px 0 0 black, -1px 0 0 black, 0 1px 0 black, 0 -1px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black; }
 
+.main__btn__BdT a {
+  color: antiquewhite; }
+
 .main__btn--banda {
   background-image: url(/Assets/Imagenes/BandaYSolo.jpg);
   height: 15vh;
@@ -348,6 +384,9 @@ division en 3 paginas con similares funciones
   animation-duration: 1s;
   animation-iteration-count: 1; }
 
+.main__edu a {
+  color: antiquewhite; }
+
 .main__edu--btn {
   color: antiquewhite;
   text-shadow: 1px 0 0 black, -1px 0 0 black, 0 1px 0 black, 0 -1px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black; }
@@ -373,6 +412,40 @@ division en 3 paginas con similares funciones
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat; }
+
+.slide-in-fwd-center {
+  -webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-fwd-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+@-webkit-keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+    transform: translateZ(-1400px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1; } }
+
+@keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+    transform: translateZ(-1400px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1; } }
+
+.main__cuerda {
+  padding: 2rem 2rem 4rem 2rem;
+  animation-name: slide-in-fwd-center;
+  animation-duration: 1s;
+  animation-iteration-count: 1; }
+
+.txtRecord {
+  padding-bottom: 1rem;
+  font-style: italic; }
 
 .slide-in-fwd-center {
   -webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;

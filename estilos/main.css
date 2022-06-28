@@ -1,3 +1,6 @@
+@charset "UTF-8";
+/*mixings para botones de Convocatorias*/
+/* mixing efecto de Entrada de pags, Exepto index*/
 * {
   margin: 0;
   padding: 0;
@@ -118,6 +121,7 @@ h2 {
 
 .main__card--body {
   text-align: center;
+  color: black !important;
 }
 
 .main__card--img {
@@ -128,10 +132,6 @@ h2 {
   -webkit-transform: scale(105%);
           transform: scale(105%);
   z-index: 1;
-}
-
-.main .colorCard {
-  color: black;
 }
 
 .main__mock {
@@ -145,11 +145,11 @@ h2 {
   border: solid 3px;
   border-color: #0e0c0c;
   background-image: url(../Assets/Imagenes/Mock.png);
-  padding: 1rem 3rem 3rem 3rem;
+  padding: 1rem 3rem 1rem 3rem;
   font-family: Arial, Helvetica, sans-serif, monospace;
   font-weight: 200;
   background-size: 100%;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-position: center;
   -webkit-transition: 50ms;
   transition: 50ms;
@@ -161,11 +161,364 @@ h2 {
   z-index: 1;
 }
 
+.main__mock--subText {
+  color: #1B1464;
+}
+
+@media screen and (min-width: 420px) {
+  .main__mock--cta {
+    padding: 1rem 3rem 3rem 3rem;
+  }
+}
+
+/**El footer idealmente seria este de abajo, pero creo
+una clase especifica para las paginas donde hay menos contenido 
+y quiero en futer fijado abajo*/
 .footer__info {
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   background-color: #0f0a46;
   color: white;
   place-items: center;
+}
+
+.footerFixed {
+  bottom: 0px;
+  position: absolute;
+  width: 100%;
+}
+
+/*Registro*/
+.main__registro {
+  -ms-grid-columns: 0.5fr;
+      grid-template-columns: 0.5fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-animation-name: slide-in-fwd-center;
+          animation-name: slide-in-fwd-center;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+.main__datos--margen {
+  padding: 5px;
+}
+
+.datosPers {
+  font-weight: 400;
+}
+
+.btn__registro {
+  background-color: #1B1464;
+  color: antiquewhite;
+}
+
+.btn-primary {
+  background-color: #1B1464 !important;
+  color: antiquewhite;
+}
+
+.slide-in-fwd-center {
+  -webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-fwd-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+    transform: translateZ(-1400px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+    transform: translateZ(-1400px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main__registro {
+    -ms-grid-columns: 0.8fr;
+        grid-template-columns: 0.8fr;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+/*Convocatorias-
+division en 3 paginas con similares funciones
+"ORQUESTA", "BOLSA DE TRABAJO", "EDUCACION".
+a su vez estas tienen las ecciones de cada instrumento pero al ser todas 
+las paginas similares con pequeños cambios, para no alargar,
+tengo uns sola pestaña donde modifico los cambios de todas estas subsecciones */
+.main__orq, .main__BdT, .main__edu {
+  padding: 2rem 0rem 4rem 0rem;
+  -webkit-animation-name: slide-in-fwd-center;
+          animation-name: slide-in-fwd-center;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+.main__btn {
+  color: antiquewhite;
+  text-shadow: 1px 0 0 black, -1px 0 0 black, 0 1px 0 black, 0 -1px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+  text-decoration: none;
+}
+
+.main__btn a {
+  color: antiquewhite;
+}
+
+.main__btn--cuerdas {
+  background-image: url(/Assets/Imagenes/Cuerdas.jpg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 15vh;
+  width: 100%;
+  border: solid;
+  border-color: #1B1464;
+  padding: 1rem;
+}
+
+.main__btn--maderas {
+  background-image: url(/Assets/Imagenes/Madera.jpeg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 15vh;
+  width: 100%;
+  border: solid;
+  border-color: #1B1464;
+  padding: 1rem;
+}
+
+.main__btn--bronces {
+  background-image: url(/Assets/Imagenes/Bronces.jpg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 15vh;
+  width: 100%;
+  border: solid;
+  border-color: #1B1464;
+  padding: 1rem;
+}
+
+.main__btn--percu {
+  background-image: url(/Assets/Imagenes/Percu.jpg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 15vh;
+  width: 100%;
+  border: solid;
+  border-color: #1B1464;
+  padding: 1rem;
+}
+
+.slide-in-fwd-center {
+  -webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-fwd-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+    transform: translateZ(-1400px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+    transform: translateZ(-1400px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+.main__BdT {
+  -webkit-animation-name: slide-in-fwd-center;
+          animation-name: slide-in-fwd-center;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+.main__btn__BdT {
+  color: antiquewhite;
+  text-shadow: 1px 0 0 black, -1px 0 0 black, 0 1px 0 black, 0 -1px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+}
+
+.main__btn--banda {
+  background-image: url(/Assets/Imagenes/BandaYSolo.jpg);
+  height: 15vh;
+  width: 100%;
+  border: solid;
+  border-color: #1B1464;
+  padding: 1rem;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.main__btn--sesionista {
+  background-image: url(/Assets/Imagenes/Grabacion.jpg);
+  height: 15vh;
+  width: 100%;
+  border: solid;
+  border-color: #1B1464;
+  padding: 1rem;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.main__btn--composicion {
+  background-image: url(/Assets/Imagenes/ArreglosCompo.jpg);
+  height: 15vh;
+  width: 100%;
+  border: solid;
+  border-color: #1B1464;
+  padding: 1rem;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.slide-in-fwd-center {
+  -webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-fwd-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+    transform: translateZ(-1400px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+    transform: translateZ(-1400px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+.main__edu {
+  -webkit-animation-name: slide-in-fwd-center;
+          animation-name: slide-in-fwd-center;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+.main__edu--btn {
+  color: antiquewhite;
+  text-shadow: 1px 0 0 black, -1px 0 0 black, 0 1px 0 black, 0 -1px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+}
+
+.main__btn--escolar {
+  background-image: url(/Assets/Imagenes/EduExtra.jpg);
+  height: 15vh;
+  width: 100%;
+  border: solid;
+  border-color: #1B1464;
+  padding: 1rem;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.main__btn--extraescolar {
+  background-image: url(/Assets/Imagenes/EduParticular.jpg);
+  height: 15vh;
+  width: 100%;
+  border: solid;
+  border-color: #1B1464;
+  padding: 1rem;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.slide-in-fwd-center {
+  -webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-fwd-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+    transform: translateZ(-1400px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+    transform: translateZ(-1400px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+.acordionPosicion {
+  -ms-grid-columns: auto 1fr auto;
+      grid-template-columns: auto 1fr auto;
 }
 /*# sourceMappingURL=main.css.map */

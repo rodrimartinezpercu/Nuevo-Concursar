@@ -15,11 +15,17 @@
 
 /*Convocatorias-
 division en 3 paginas con similares funciones
-"ORQUESTA", "BOLSA DE TRABAJO", "EDUCACION". */
+"ORQUESTA", "BOLSA DE TRABAJO", "EDUCACION".
+a su vez estas tienen las ecciones de cada instrumento pero al ser todas 
+las paginas similares con pequeños cambios, para no alargar,
+tengo uns sola pestaña donde modifico los cambios de todas estas subsecciones */
 
 @import "./parciales/orquesta";
 @import "./parciales/bolsatdetrabajo" ;
 @import "./parciales/edu";
+@import "./parciales/convocatorias";
+
+
 
 
 

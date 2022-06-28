@@ -1,8 +1,11 @@
 .main{
     &__edu{
         @extend .main__orq;
-        @include efEntrada
+        @include efEntrada;
     }
+
+    &__edu a {color: $fondoClaro}
+    
 
     &__edu--btn {
         color: $fondoClaro;

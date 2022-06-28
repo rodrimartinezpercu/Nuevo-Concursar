@@ -6,7 +6,10 @@
     &__btn{ 
         color: map-get($colorTxt,"txtClaro");
         @include txtShadow;
+        @include ancorNatural;
     } 
+
+    &__btn a { color: $fondoClaro;}
         
 
         &__btn--cuerdas {
