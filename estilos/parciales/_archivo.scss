@@ -1,38 +1,13 @@
-.main{
+.main{ 
+    &__archivo { animation-name:slide-in-fwd-center;animation-duration: 1s;
+        animation-iteration-count: 1;}
 
-    &__BdT{
-        @extend .main__orq;
-        @include efEntrada
-        
+    &__archivo--btn{
+        display: flex;
+        justify-content: center;
     }
-
-    &__btn__BdT{ 
-        color: $fondoClaro; 
-        @include txtShadow;
-        }
-        &__btn__BdT a {color: $fondoClaro;}
-
-    &__btn--banda{
-        background-image: url(/Assets/Imagenes/BandaYSolo.jpg);
-        @include btnConvocatorias;
-        @include backImg
-    }
-    &__btn--sesionista {
-        background-image: url(/Assets/Imagenes/Grabacion.jpg);
-        @include btnConvocatorias;
-        @include backImg
-    }
-
-    &__btn--composicion {
-        background-image: url(/Assets/Imagenes/ArreglosCompo.jpg);
-        @include btnConvocatorias;
-        @include backImg
-    }
-
-    &__bandas {padding: 2rem 2rem 4rem 2rem; display: grid; justify-content: center;align-items: center;}
-    
+    &__archivo--list a {@include ancorNatural; }
 }
-
 .slide-in-fwd-center {
     -webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
             animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;}
@@ -58,7 +33,4 @@
                 -webkit-transform: translateZ(0);
                 transform: translateZ(0);
                 opacity: 1;
-                }
-
-            }
-
+                } }

@@ -153,6 +153,12 @@ h2 {
   place-content: center;
   color: #EEEEEE; }
 
+.main__videos {
+  justify-content: space-around;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  align-items: center; }
+
 @media screen and (min-width: 420px) {
   .main__mock--cta {
     padding: 1rem 3rem 3rem 3rem; } }
@@ -170,6 +176,42 @@ y quiero en futer fijado abajo*/
   bottom: 0px;
   position: absolute;
   width: 100%; }
+
+.main__archivo {
+  animation-name: slide-in-fwd-center;
+  animation-duration: 1s;
+  animation-iteration-count: 1; }
+
+.main__archivo--btn {
+  display: flex;
+  justify-content: center; }
+
+.main__archivo--list a {
+  text-decoration: none; }
+
+.slide-in-fwd-center {
+  -webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-fwd-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+@-webkit-keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+    transform: translateZ(-1400px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1; } }
+
+@keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+    transform: translateZ(-1400px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1; } }
 
 /*Registro*/
 .main__registro {
@@ -354,6 +396,12 @@ tengo uns sola pestaña donde modifico los cambios de todas estas subsecciones *
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat; }
+
+.main__bandas {
+  padding: 2rem 2rem 4rem 2rem;
+  display: grid;
+  justify-content: center;
+  align-items: center; }
 
 .slide-in-fwd-center {
   -webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
